@@ -136,12 +136,6 @@ router.get('/ether-pay', ensureAuthenticated, (req, res) =>
 );
 
 
-router.get('/litecoin-pay', ensureAuthenticated, (req, res) =>
-  res.render('litecoinpay', {
-    user: req.user
-  })
-);
-
 
 router.get('/tron-pay', ensureAuthenticated, (req, res) =>
   res.render('tronpay', {
@@ -149,14 +143,9 @@ router.get('/tron-pay', ensureAuthenticated, (req, res) =>
   })
 );
 
-router.get('/busd-pay', ensureAuthenticated, (req, res) =>
-  res.render('busd', {
-    user: req.user
-  })
-);
 
-router.get('/shib-pay', ensureAuthenticated, (req, res) =>
-  res.render('shib', {
+router.get('/sol-pay', ensureAuthenticated, (req, res) =>
+  res.render('solana', {
     user: req.user
   })
 );
